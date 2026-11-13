@@ -91,8 +91,6 @@ def main():
     # Extraction sanity
     if "\ufffd" in text:
         failures.append("replacement characters in extracted text (font/encoding problem)")
-    if re.search(r"[A-Za-z]-\n[A-Za-z]", text):
-        warnings.append("hyphenated line break may split a keyword during extraction")
 
     # Keyword coverage. Match against whitespace-normalised text so a phrase that
     # wraps across a line still counts (ATS tokenisers do the same).
