@@ -12,7 +12,7 @@
 
 {{ data.profile.summary }}
 
-## Current portfolio
+## Current work at Barnardo's
 
 <ul class="outcomes">
 {% for item in data.profile.portfolio %}

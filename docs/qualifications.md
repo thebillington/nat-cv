@@ -5,6 +5,8 @@
 
 <p class="role-meta">{{ cert.issuer }}, {{ cert.awarded }}, {{ cert.grade }}</p>
 
+<a class="md-button" href="../assets/certificate.pdf">View the certificate (PDF)</a>
+
 {% endfor %}
 
 ## Education and further study
@@ -12,8 +14,7 @@
 <ul class="qualification-list">
 {% for edu in data.education.education %}
   <li>
-    <strong>{{ edu.degree }}</strong>, {{ edu.institution }}
-    {% if edu.grade %}<span class="qual-grade">, {{ edu.grade }}</span>{% endif %}
+    <strong>{{ edu.degree }}</strong>, {{ edu.institution }}{% if edu.grade %}<span class="qual-grade">, {{ edu.grade }}</span>{% endif %}
     <br />
     <span class="qual-grade">{{ edu.start }} to {{ edu.end }}</span>
   </li>

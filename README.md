@@ -80,8 +80,7 @@ GitHub Pages at https://thebillington.github.io/nat-cv.
 ## Accessibility
 
 The PDF is exported as PDF/UA-1 with tagged headings and reading order. The
-website is the reflowable alternative, with WCAG AA contrast and an
-accessibility statement. See `docs/accessibility.md`.
+website uses the same content with WCAG AA contrast and reflowable text.
 
 ## Licence
 

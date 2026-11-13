@@ -76,6 +76,9 @@
     ]
   ]
 
+  v(6pt)
+  pdf.artifact(line(length: 100%, stroke: 0.8pt + teal))
+
   // ── Profile ─────────────────────────────────────────────────────────
   heading(level: 2)[Profile]
   text(size: 10.5pt)[#data.profile.summary]
@@ -84,7 +87,7 @@
   heading(level: 2)[Areas of expertise]
   for (i, line) in data.skills.expertise.enumerate() {
     if i > 0 { linebreak() }
-    text(size: 10.5pt)[#line]
+    text(size: 9.5pt, fill: slate)[#line]
   }
 
   // ── Experience ──────────────────────────────────────────────────────
@@ -92,8 +95,8 @@
 
   for role in data.experience {
     block(above: 0pt, below: 0pt, breakable: false)[
-      #v(6pt)
-      #text(size: 11pt, weight: 600)[#role.title]#text(size: 11pt)[, #role.company]
+      #v(16pt)
+      #text(size: 11.5pt, weight: 600)[#role.company]#text(size: 10.5pt)[, #role.title]
       #h(1fr)
       #text(size: 9.5pt, fill: slate)[#role.start to #role.end]
       #linebreak()
@@ -127,6 +130,8 @@
     #text(size: 10.5pt, weight: 600)[#cert.name]#h(1fr)#text(size: 9.5pt, fill: slate)[#cert.awarded]
     #linebreak()
     #text(size: 9.5pt, fill: meta)[#cert.issuer, #cert.grade]
+    #h(0.8em)
+    #text(size: 8.5pt)[#link("https://thebillington.co.uk/nat-cv/assets/certificate.pdf")[View certificate]]
     #v(3pt)
   ]
 
