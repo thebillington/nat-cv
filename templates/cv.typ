@@ -80,13 +80,6 @@
   heading(level: 2)[Profile]
   text(size: 10.5pt)[#data.profile.summary]
 
-  // ── Current portfolio ───────────────────────────────────────────────
-  heading(level: 2)[Current portfolio]
-  list(
-    spacing: 0.3em,
-    ..data.profile.portfolio.map(p => text(size: 10.5pt)[*#p.label* — #p.text]),
-  )
-
   // ── Areas of expertise ──────────────────────────────────────────────
   heading(level: 2)[Areas of expertise]
   for (i, line) in data.skills.expertise.enumerate() {
@@ -98,26 +91,24 @@
   heading(level: 2)[Experience]
 
   for role in data.experience {
-    block(above: 0pt, below: 1pt, breakable: false)[
-      #v(8pt)
+    block(above: 0pt, below: 0pt, breakable: false)[
+      #v(9pt)
       #text(size: 11pt, weight: 600)[#role.title]#text(size: 11pt)[, #role.company]
       #h(1fr)
       #text(size: 9.5pt, fill: slate)[#role.start -- #role.end]
       #linebreak()
       #text(size: 9pt, fill: meta)[#role.sector]
-    ]
-
-    if role.at("summary", default: "") != "" [
-      #v(1.5pt)
-      #text(size: 10pt)[#role.summary]
-    ]
-
-    if role.at("achievements", default: ()).len() > 0 [
-      #v(2pt)
-      #list(
-        spacing: 0.38em,
-        ..role.achievements.map(a => text(size: 10pt)[*#a.title.* #a.description]),
-      )
+      #if role.at("summary", default: "") != "" [
+        #v(3pt)
+        #text(size: 10pt)[#role.summary]
+      ]
+      #if role.at("achievements", default: ()).len() > 0 [
+        #v(2pt)
+        #list(
+          spacing: 0.38em,
+          ..role.achievements.map(a => text(size: 10pt)[*#a.title.* #a.description]),
+        )
+      ]
     ]
   }
 

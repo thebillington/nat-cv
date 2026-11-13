@@ -67,7 +67,6 @@ def main():
 
     required_sections = [
         "Profile",
-        "Current portfolio",
         "Areas of expertise",
         "Experience",
         "Qualifications",
