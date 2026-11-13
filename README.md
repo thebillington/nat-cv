@@ -23,14 +23,14 @@ python3 -m venv .venv
 .venv/bin/python scripts/build.py --website
 
 # visual previews
-.venv/bin/python scripts/preview.py output/cv-natalie-rebecchi.pdf
+.venv/bin/python scripts/preview.py output/Natalie-Rebecchi-CV.pdf
 .venv/bin/python scripts/screenshot_site.py
 ```
 
 Typst is required. `scripts/build.py` uses `~/.local/bin/typst` if present,
 otherwise `typst` on `PATH`.
 
-Output: `output/cv-natalie-rebecchi.pdf` and `output/site/`.
+Output: `output/Natalie-Rebecchi-CV.pdf` and `output/site/`.
 
 ## Architecture
 

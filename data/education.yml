@@ -22,6 +22,7 @@ education:
 
   - institution: Distance learning
     degree: Copy Editing
+    include_pdf: false
     start: "2011"
     end: "2012"
     grade: Merit

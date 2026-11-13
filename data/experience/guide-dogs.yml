@@ -38,4 +38,5 @@ achievements:
       marketing the service locally and nationally through case studies, press
       releases and presentations.
     impact: medium
+    include_pdf: false
     tags: [training, communications]

@@ -4,7 +4,7 @@
 <p class="hero-contact">{{ data.profile.location }}<br /><a href="mailto:{{ data.profile.email }}">{{ data.profile.email }}</a></p>
 
 <p class="button-row">
-  <a class="md-button md-button--primary" href="cv-{{ data.profile.name.lower().replace(' ', '-') }}.pdf">Download CV (PDF)</a>
+  <a class="md-button md-button--primary" href="{{ data.profile.name.replace(' ', '-') }}-CV.pdf">Download CV (PDF)</a>
   <a class="md-button" href="experience/">View experience</a>
 </p>
 

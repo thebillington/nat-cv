@@ -41,16 +41,10 @@ achievements:
     description: >-
       Working with the Executive Leadership Team, front-line colleagues and
       support service functions to ensure successful adoption of organisational
-      change.
-    impact: high
-    tags: [stakeholder, change, influence]
-
-  - title: Leading structured change management activity
-    description: >-
-      Including change impact assessments, equality impact assessments,
+      change, including change impact assessments, equality impact assessments,
       communications planning, readiness activities and training coordination.
     impact: high
-    tags: [change, edi, communications]
+    tags: [stakeholder, change, edi, influence]
 
   - title: Facilitating business analysis and user research workshops
     description: >-

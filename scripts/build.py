@@ -29,7 +29,7 @@ TEMPLATE = "cv.typ"
 
 
 def cv_pdf_name(profile):
-    return f"cv-{profile['name'].lower().replace(' ', '-')}"
+    return f"{profile['name'].replace(' ', '-')}-CV"
 
 
 def typst_bin():
