@@ -28,7 +28,10 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils
+          pip install -r requirements.txt
 
       - name: Set up Typst
         uses: typst-community/setup-typst@v3
