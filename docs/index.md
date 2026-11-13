@@ -3,12 +3,6 @@
 <p class="hero-role">{{ data.profile.title }}</p>
 <p class="hero-contact">{{ data.profile.location }}<br /><a href="mailto:{{ data.profile.email }}">{{ data.profile.email }}</a></p>
 
-<div class="stats">
-  <div><strong>15+</strong><span>years in the third sector</span></div>
-  <div><strong>£2.5m</strong><span>DfE-funded programme</span></div>
-  <div><strong>900</strong><span>properties in the directorate</span></div>
-</div>
-
 <p class="button-row">
   <a class="md-button md-button--primary" href="cv-{{ data.profile.name.lower().replace(' ', '-') }}.pdf">Download CV (PDF)</a>
   <a class="md-button" href="experience/">View experience</a>

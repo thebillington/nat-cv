@@ -173,41 +173,6 @@ body,
   border-left: 3px solid var(--cv-teal);
 }
 
-.md-typeset .stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.9rem;
-  margin: 1.6rem 0 0.4rem;
-  max-width: 68ch;
-}
-
-.md-typeset .stats div {
-  border-top: 2px solid var(--cv-teal);
-  padding-top: 0.5rem;
-}
-
-.md-typeset .stats strong {
-  display: block;
-  font-family: "Source Serif 4", Georgia, serif;
-  font-size: 1.6rem;
-  color: var(--cv-navy);
-  line-height: 1.1;
-}
-
-.md-typeset .stats span {
-  display: block;
-  font-size: 0.8rem;
-  color: var(--cv-slate);
-  line-height: 1.35;
-  margin-top: 0.2rem;
-}
-
-@media screen and (max-width: 44.984375em) {
-  .md-typeset .stats {
-    grid-template-columns: 1fr;
-  }
-}
-
 .md-typeset .outcomes li {
   margin-bottom: 0.75rem;
 }
@@ -325,4 +290,8 @@ body,
 
 .md-content__inner {
   max-width: 48rem;
+}
+
+.md-sidebar--secondary {
+  display: none;
 }
