@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="{{ config.site_name }}">
+  <meta property="og:description" content="{{ config.site_description }}">
+  <meta property="og:url" content="{{ page.canonical_url }}">
+  <meta property="og:site_name" content="{{ config.site_name }}">
+  <meta property="og:locale" content="en_GB">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ config.site_name }}">
+  <meta name="twitter:description" content="{{ config.site_description }}">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": {{ config.extra.person.name | tojson }},
+    "url": {{ config.site_url | tojson }},
+    "jobTitle": {{ config.extra.person.title | tojson }},
+    "description": {{ config.extra.person.description | tojson }},
+    "email": {{ config.extra.person.email | tojson }}
+  }
+  </script>
+{% endblock %}

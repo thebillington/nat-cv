@@ -1,0 +1,55 @@
+site_name: Natalie Rebecchi — CV
+site_description: "Programme and Project Manager with over fifteen years' experience in the third sector. Programme governance, benefits management and organisational change."
+site_url: https://thebillington.github.io/nat-cv
+repo_url: https://github.com/thebillington/nat-cv
+edit_uri: ""
+copyright: Natalie Rebecchi
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+  font: false
+  palette:
+    scheme: default
+    primary: custom
+    accent: custom
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - toc.integrate
+
+extra_css:
+  - stylesheets/cv.css
+
+exclude_docs: |
+  research/
+  design/
+  reviews/
+  pipeline.md
+  _*.txt
+
+nav:
+  - About: index.md
+  - Experience: experience.md
+  - Skills: skills.md
+  - Qualifications: qualifications.md
+  - Volunteering: volunteering.md
+  - Download CV: __CV_PDF__
+  - Accessibility: accessibility.md
+
+extra:
+  social:
+    - icon: fontawesome/solid/envelope
+      link: mailto:natalie.donna.edwards@gmail.com
+  person:
+    name: Natalie Rebecchi
+    email: natalie.donna.edwards@gmail.com
+    title: Programme & Project Manager
+    description: "Programme and Project Manager with over fifteen years' experience developing and delivering strategies and projects within the third sector."
+
+plugins:
+  - search
+  - macros:
+      module_name: main

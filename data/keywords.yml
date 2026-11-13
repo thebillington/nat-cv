@@ -1,0 +1,201 @@
+# Keyword bank for score_job.py and the PDF keyword-coverage check.
+# Sourced from docs/research/market-keywords.md (UK senior programme market, 2026).
+# Terms are matched case-insensitively as phrases.
+
+groups:
+  Programme delivery:
+    - programme management
+    - project management
+    - portfolio management
+    - programme governance
+    - portfolio governance
+    - programme board
+    - steering group
+    - steering committee
+    - integrated plan
+    - delivery plan
+    - milestone
+    - dependency management
+    - dependencies
+    - change control
+    - scope
+    - baselining
+    - re-baseline
+    - programme assurance
+    - assurance
+    - stage gate
+    - gate review
+    - post-implementation review
+    - lessons learned
+    - continuous improvement
+    - programme performance
+    - delivery at pace
+
+  Benefits and business case:
+    - benefits management
+    - benefits realisation
+    - benefits realisation strategy
+    - benefits profile
+    - benefits owner
+    - benefits mapping
+    - benefits tracking
+    - business case
+    - five case model
+    - strategic case
+    - economic case
+    - commercial case
+    - financial case
+    - management case
+    - green book
+    - theory of change
+    - outcomes framework
+    - impact measurement
+    - social value
+    - return on investment
+    - value for money
+
+  Risk and governance:
+    - RAID
+    - RAID log
+    - risk management
+    - risk appetite
+    - issue management
+    - risk register
+    - escalation
+    - terms of reference
+    - responsibility matrix
+    - RACI
+    - governance framework
+
+  Strategy and change:
+    - organisational change
+    - business change
+    - transformation
+    - target operating model
+    - operating model
+    - business architecture
+    - organisational design
+    - change management
+    - change impact assessment
+    - readiness assessment
+    - business readiness
+    - transition management
+    - adoption
+    - stakeholder engagement
+    - stakeholder management
+    - stakeholder mapping
+    - communications planning
+    - training coordination
+    - culture change
+
+  Stakeholders and leadership:
+    - executive leadership team
+    - board
+    - trustees
+    - senior responsible owner
+    - influencing
+    - negotiation
+    - partnership working
+    - relationship management
+    - line management
+    - coaching
+    - mentoring
+    - matrix management
+    - team development
+    - public speaking
+    - facilitation
+
+  Analysis and improvement:
+    - business analysis
+    - user research
+    - process improvement
+    - service design
+    - journey mapping
+    - options appraisal
+    - data analysis
+    - survey design
+    - performance reporting
+    - KPI
+    - management information
+
+  Budget and commercial:
+    - budget management
+    - budget
+    - financial management
+    - forecasting
+    - procurement
+    - supplier management
+    - contract management
+    - grant management
+    - funder reporting
+    - restricted income
+
+  Public sector:
+    - GMPP
+    - NISTA
+    - IPA
+    - GovS 002
+    - teal book
+    - orange book
+    - SOC
+    - OBC
+    - FBC
+    - RDEL
+    - CDEL
+    - spending review
+    - ministerial
+    - arm's-length body
+
+  Third sector:
+    - safeguarding
+    - equality impact assessment
+    - EDI
+    - lived experience
+    - co-production
+    - volunteers
+    - volunteer management
+    - charity governance
+    - commissioned services
+    - local authority
+    - VCSE
+
+  Qualifications:
+    - APM PMQ
+    - APM
+    - PMQ
+    - ChPP
+    - PRINCE2
+    - MSP
+    - MoP
+    - P3M3
+    - AgilePM
+    - Managing Benefits
+    - Prosci
+    - ADKAR
+
+# Terms that senior recruiters and practitioners consistently flag as filler
+# or as a junior signal. check_pdf.py fails the build if any appear.
+avoid:
+  - results-driven
+  - results driven
+  - dynamic leader
+  - self-starter
+  - self motivated
+  - self-motivated
+  - team player
+  - hard-working
+  - hard working
+  - detail-oriented
+  - detail oriented
+  - passionate about
+  - thought leader
+  - synergy
+  - synergies
+  - holistic
+  - responsible for
+  - duties included
+  - spearheaded
+  - leveraged
+  - go-getter
+  - outside the box
+  - wear many hats

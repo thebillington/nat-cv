@@ -1,0 +1,263 @@
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("../assets/fonts/SourceSans3-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("../assets/fonts/SourceSans3-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("../assets/fonts/SourceSans3-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("../assets/fonts/SourceSerif4-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --cv-navy: #16324f;
+  --cv-teal: #0f5e5a;
+  --cv-slate: #3f4a56;
+  --cv-meta: #5b6570;
+  --cv-ink: #1a1a1a;
+  --cv-paper: #fbf9f5;
+  --cv-rule: #d9dee3;
+  --md-primary-fg-color: #16324f;
+  --md-primary-fg-color--light: #24486d;
+  --md-primary-fg-color--dark: #0e2136;
+  --md-accent-fg-color: #0f5e5a;
+  --md-typeset-a-color: #0f5e5a;
+  --md-default-bg-color: #fbf9f5;
+  --md-text-font: "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --md-code-font: "Source Sans 3", ui-monospace, monospace;
+}
+
+body,
+.md-typeset {
+  font-family: var(--md-text-font);
+  color: var(--cv-ink);
+}
+
+.md-typeset {
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.md-typeset p,
+.md-typeset li {
+  max-width: 68ch;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 600;
+  color: var(--cv-navy);
+  letter-spacing: -0.01em;
+}
+
+.md-typeset h1 {
+  font-size: 2.15rem;
+  margin-bottom: 0.2rem;
+}
+
+.md-typeset h2 {
+  font-size: 1.35rem;
+  border-bottom: 1px solid var(--cv-rule);
+  padding-bottom: 0.35rem;
+  margin-top: 2.2rem;
+}
+
+.md-typeset h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.15rem;
+}
+
+.md-typeset a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+.md-typeset a:hover {
+  color: var(--cv-navy);
+}
+
+/* Header and nav */
+.md-header {
+  background-color: var(--cv-navy);
+  box-shadow: none;
+}
+
+.md-tabs {
+  background-color: var(--cv-navy);
+}
+
+.md-typeset .hero-role {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--cv-teal);
+  margin-top: -0.2rem;
+}
+
+.md-typeset .hero-contact {
+  color: var(--cv-slate);
+  font-size: 0.95rem;
+}
+
+.md-typeset .button-row {
+  margin: 1.4rem 0 0.4rem;
+}
+
+.md-typeset .md-button {
+  border-radius: 2px;
+  border-color: var(--cv-teal);
+  color: var(--cv-teal);
+  font-weight: 600;
+  padding: 0.5rem 1.1rem;
+}
+
+.md-typeset .md-button--primary {
+  background-color: var(--cv-teal);
+  border-color: var(--cv-teal);
+  color: #ffffff;
+}
+
+.md-typeset .md-button:hover {
+  background-color: var(--cv-navy);
+  border-color: var(--cv-navy);
+  color: #ffffff;
+}
+
+/* Section lists that mirror the PDF */
+.md-typeset .outcomes {
+  list-style: none;
+  padding-left: 0;
+}
+
+.md-typeset .outcomes li {
+  border-left: 2px solid var(--cv-teal);
+  padding-left: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.md-typeset .expertise {
+  color: var(--cv-slate);
+}
+
+.md-typeset .expertise p {
+  margin: 0.15rem 0;
+}
+
+.md-typeset .role-meta {
+  color: var(--cv-meta);
+  font-size: 0.92rem;
+  margin: 0.1rem 0 0.55rem;
+}
+
+.md-typeset .role-summary {
+  margin-bottom: 0.5rem;
+}
+
+.md-typeset .role-list {
+  margin-top: 0;
+}
+
+.md-typeset .role-list li {
+  margin-bottom: 0.35rem;
+}
+
+.md-typeset .qualification-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.md-typeset .qualification-list li {
+  border-bottom: 1px solid var(--cv-rule);
+  padding: 0.5rem 0;
+}
+
+.md-typeset .qual-grade {
+  color: var(--cv-meta);
+  font-size: 0.92rem;
+}
+
+/* Footer */
+.md-footer,
+.md-footer-meta {
+  background-color: var(--cv-navy);
+}
+
+/* Accessibility */
+.md-typeset a:focus-visible,
+.md-typeset button:focus-visible,
+.md-nav__link:focus-visible {
+  outline: 2px solid var(--cv-teal);
+  outline-offset: 2px;
+}
+
+@media screen and (max-width: 44.984375em) {
+  .md-typeset h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media print {
+  .md-header,
+  .md-tabs,
+  .md-sidebar,
+  .md-footer,
+  .md-content__button,
+  .button-row {
+    display: none !important;
+  }
+
+  .md-main__inner,
+  .md-content {
+    margin: 0 !important;
+    max-width: none !important;
+  }
+
+  body,
+  .md-typeset {
+    font-size: 10pt;
+    color: #000000;
+  }
+
+  .md-typeset h1,
+  .md-typeset h2,
+  .md-typeset h3 {
+    color: #000000;
+  }
+
+  .md-typeset h2 {
+    border-bottom: 0.5pt solid #999999;
+    page-break-after: avoid;
+  }
+
+  .md-typeset h3 {
+    page-break-after: avoid;
+  }
+
+  .md-typeset li,
+  .md-typeset p {
+    page-break-inside: avoid;
+  }
+}
+
+.md-content__inner {
+  max-width: 48rem;
+}

@@ -1,0 +1,22 @@
+# Output
+output/
+site/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Review scratch files
+docs/reviews/_*.txt
