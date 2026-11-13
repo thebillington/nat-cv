@@ -1,27 +1,27 @@
 education:
   - institution: University of Birmingham
     degree: MA with Merit in Translation Studies
-    start: 2019-09
-    end: 2022-06
+    start: "2019"
+    end: "2022"
 
   - institution: University of Birmingham
     degree: "PGDE (Secondary: Modern Foreign Languages)"
-    start: 2008-09
-    end: 2009-06
+    start: "2008"
+    end: "2009"
 
   - institution: University of Nottingham
     degree: BA in French Studies
-    start: 2003-09
-    end: 2007-06
+    start: "2003"
+    end: "2007"
     grade: "2:1"
 
   - institution: Institute of Leadership & Management
     degree: ILM Level 3 Qualification in Volunteer Management
-    start: 2014-09
-    end: 2015-02
+    start: "2014"
+    end: "2015"
 
   - institution: Distance learning
     degree: Copy Editing
-    start: 2011-06
-    end: 2012-11
+    start: "2011"
+    end: "2012"
     grade: Merit

@@ -9,7 +9,7 @@ volunteering:
   - role: Athlete Services Team Member
     organisation: Birmingham Commonwealth Games 2022
     description: >-
-      Volunteered as part of the athlete services team during the Games.
+      Supported athlete services during the Games.
   - role: Business Coordinator
     organisation: The Arches Project, Digbeth
     year: 2016
@@ -19,10 +19,16 @@ volunteering:
   - role: Judge
     organisation: BBC Radio 2 500 Words
     year: 2013
+    include_pdf: false
     description: >-
       Judged entries for the national children's writing competition.
   - role: Befriender
     organisation: Age Concern
     year: 2007
+    include_pdf: false
     description: >-
       Befriended an elderly lady over the course of the year.
+
+personal:
+  - "Lives in Nottingham with her husband and two young children."
+  - "Keen dancer, singer and pianist; regular gym goer."

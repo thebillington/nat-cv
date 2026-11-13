@@ -9,14 +9,6 @@ summary: >
   Learning Management System and CRM.
 
 achievements:
-  - title: Managed many concurrent projects
-    description: >-
-      Delivered volunteering and lived experience transformation, Christmas
-      volunteer recruitment and systems procurement side by side, balancing
-      competing priorities and dependencies.
-    impact: high
-    tags: [portfolio, delivery, transformation]
-
   - title: Launched and managed the Specialist Volunteering programme
     description: >-
       Working with business professionals and corporate organisations to boost
@@ -27,8 +19,8 @@ achievements:
   - title: Created a new supporter communication journey
     description: >-
       Designed to ensure supporters were engaged, informed and motivated
-      throughout their involvement with Crisis, with experience monitored
-      through surveys and journey mapping.
+      throughout their involvement with Crisis, with experience monitored through
+      surveys and journey mapping.
     impact: medium
     tags: [communications, journey-mapping, insight]
 
@@ -39,9 +31,9 @@ achievements:
     impact: high
     tags: [training, accessibility, volunteer-management]
 
-  - title: Led procurement of a Learning Management System and CRM
+  - title: Redesigned departmental landing webpages
     description: >-
-      Defining requirements, evaluating suppliers and planning implementation
-      for two business-critical systems.
+      Responding to behaviour and SEO analytics to improve how supporters found
+      and used volunteering information.
     impact: medium
-    tags: [procurement, systems, delivery]
+    tags: [digital, analytics, insight]

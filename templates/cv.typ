@@ -80,11 +80,11 @@
   heading(level: 2)[Profile]
   text(size: 10.5pt)[#data.profile.summary]
 
-  // ── Selected outcomes ───────────────────────────────────────────────
-  heading(level: 2)[Selected outcomes]
+  // ── Current portfolio ───────────────────────────────────────────────
+  heading(level: 2)[Current portfolio]
   list(
     spacing: 0.3em,
-    ..data.profile.outcomes.map(o => text(size: 10.5pt)[#o]),
+    ..data.profile.portfolio.map(p => text(size: 10.5pt)[*#p.label* — #p.text]),
   )
 
   // ── Areas of expertise ──────────────────────────────────────────────
@@ -98,7 +98,8 @@
   heading(level: 2)[Experience]
 
   for role in data.experience {
-    block(above: 7.5pt, below: 1pt, breakable: false)[
+    block(above: 0pt, below: 1pt, breakable: false)[
+      #v(8pt)
       #text(size: 11pt, weight: 600)[#role.title]#text(size: 11pt)[, #role.company]
       #h(1fr)
       #text(size: 9.5pt, fill: slate)[#role.start -- #role.end]
@@ -120,6 +121,14 @@
     ]
   }
 
+  // ── Governance and voluntary ────────────────────────────────────────
+  heading(level: 2)[Board and voluntary roles]
+
+  for item in data.volunteering.volunteering.filter(i => i.at("include_pdf", default: true)) [
+    #text(size: 10pt)[*#item.role*]#text(size: 10pt, fill: slate)[, #item.organisation]#if item.at("year", default: none) != none [#text(size: 9.5pt, fill: meta)[ (#item.year)]]#if item.at("location", default: none) != none [#text(size: 9.5pt, fill: meta)[, #item.location]]#text(size: 10pt)[: #item.description]
+    #parbreak()
+  ]
+
   // ── Qualifications ──────────────────────────────────────────────────
   heading(level: 2)[Qualifications and professional development]
 
@@ -135,11 +144,4 @@
     #linebreak()
   ]
 
-  // ── Governance and voluntary ────────────────────────────────────────
-  heading(level: 2)[Governance and voluntary roles]
-
-  for item in data.volunteering.volunteering [
-    #text(size: 10pt)[*#item.role*]#text(size: 10pt, fill: slate)[, #item.organisation]#if item.at("year", default: none) != none [#text(size: 9.5pt, fill: meta)[ (#item.year)]]#if item.at("location", default: none) != none [#text(size: 9.5pt, fill: meta)[, #item.location]]#text(size: 10pt)[: #item.description]
-    #parbreak()
-  ]
 }

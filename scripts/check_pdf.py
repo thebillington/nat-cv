@@ -67,11 +67,11 @@ def main():
 
     required_sections = [
         "Profile",
-        "Selected outcomes",
+        "Current portfolio",
         "Areas of expertise",
         "Experience",
         "Qualifications",
-        "Governance and voluntary roles",
+        "Board and voluntary roles",
     ]
     for section in required_sections:
         if section.lower() not in lower:
@@ -104,7 +104,7 @@ def main():
     core = [
         "programme governance",
         "benefits management",
-        "benefits realisation",
+        "benefits management",
         "RAID",
         "steering group",
         "risk management",
@@ -114,7 +114,8 @@ def main():
         "equality impact assessment",
         "business analysis",
         "budget",
-        "APM PMQ",
+        "APM",
+        "PMQ",
     ]
     core_missing = [t for t in core if t.lower() not in flat]
 

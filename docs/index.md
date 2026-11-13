@@ -12,11 +12,11 @@
 
 {{ data.profile.summary }}
 
-## Selected outcomes
+## Current portfolio
 
 <ul class="outcomes">
-{% for outcome in data.profile.outcomes %}
-  <li>{{ outcome }}</li>
+{% for item in data.profile.portfolio %}
+  <li><strong>{{ item.label }}</strong> — {{ item.text }}</li>
 {% endfor %}
 </ul>
 

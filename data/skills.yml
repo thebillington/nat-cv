@@ -1,15 +1,17 @@
 expertise:
-  - "Programme governance · Benefits management and realisation · RAID and risk management · Steering groups and terms of reference"
-  - "Target operating models · Change and equality impact assessment · Business readiness · Adoption and training"
-  - "Business analysis · User research · Executive influencing · Partnership working · Coaching and line management"
+  - "Programme and portfolio governance · Strategy design · Benefits management and realisation"
+  - "RAID and risk management · Assurance and dependency management · Steering groups and terms of reference"
+  - "Stakeholder and relationship management · Negotiation and influencing · Public speaking and presentation"
+  - "Business analysis and user research · Change and equality impact assessment · Coaching and line management"
+  - "Copy editing and writing · Translation · French (fluent) · Spanish (competent)"
 
 categories:
   - name: Programme & Project Delivery
     skills:
       - Programme management
       - Project management
-      - Portfolio delivery
-      - Scoping and planning
+      - Portfolio governance
+      - Strategy design
       - Benefits management
       - Benefits realisation
       - Dependency management
@@ -17,13 +19,12 @@ categories:
   - name: Governance & Assurance
     skills:
       - Programme governance
+      - Assurance and reporting
       - Steering groups
       - Terms of reference
       - RAID logs
       - Risk and issue management
       - Responsibility matrices
-      - Assurance and reporting
-      - Business cases
 
   - name: Change & Transformation
     skills:
@@ -31,13 +32,13 @@ categories:
       - Target operating model
       - Change impact assessment
       - Equality impact assessment
-      - Readiness and adoption
+      - Business readiness and adoption
       - Communications planning
       - Training coordination
 
   - name: Stakeholder & Influence
     skills:
-      - Executive stakeholder management
+      - Stakeholder management
       - Relationship management
       - Negotiation and influencing
       - Partnership working
@@ -48,9 +49,9 @@ categories:
     skills:
       - Line management
       - Coaching and mentoring
+      - Training and teaching
       - Team development
       - Volunteer management
-      - Matrix working
 
   - name: Analysis & Insight
     skills:
@@ -59,9 +60,10 @@ categories:
       - Process improvement
       - Journey mapping
       - Survey design
-      - SEO and behaviour analytics
 
-  - name: Languages
+  - name: Writing & Languages
     skills:
+      - Copy editing and writing
+      - Translation
       - French (fluent)
       - Spanish (competent)

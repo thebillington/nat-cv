@@ -56,11 +56,11 @@ remain distinguishable in greyscale.
 
 1. Name, role, contact
 2. Profile — three to four lines, in Natalie's voice
-3. Selected outcomes — three scope statements that survive a six-second scan
+3. Current portfolio — three programme scope statements that survive a six-second scan
 4. Areas of expertise — three dense lines, not a matrix or skill bars
 5. Experience — reverse chronological; Barnardo's leads, earlier roles compress
 6. Qualifications — APM PMQ first, then degrees and further study
-7. Governance and voluntary roles — trustee work carries real weight in the sector
+7. Board and voluntary roles — trustee work carries real weight in the sector
 
 No photo, date of birth, nationality, full address, hobbies, or references
 section.

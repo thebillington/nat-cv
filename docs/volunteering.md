@@ -8,3 +8,9 @@
 {{ item.description }}
 
 {% endfor %}
+
+## Outside work
+
+{% for line in data.volunteering.personal %}
+{{ line }}
+{% endfor %}

@@ -15,21 +15,19 @@ achievements:
       support functions, aligning programme outcomes with organisational
       strategy, future operating models and business architecture.
     impact: high
-    tags: [transformation, programme-delivery, strategy]
+    tags: [transformation, programme-delivery, strategy, portfolio]
 
   - title: Leading the Property Enhancement Programme
     description: >-
       Introducing process improvements, new systems and a target operating model
-      in a directorate looking after circa 900 properties, moving from
-      fragmented local practice to a single operating model.
+      in a directorate looking after circa 900 properties.
     impact: high
     tags: [target-operating-model, transformation, property, delivery]
 
   - title: Leading the Workforce Development Programme
     description: >-
       Working with the Centre of Expertise on Child Sexual Abuse on a programme
-      funded by a £2.5 million Department for Education budget, coordinating
-      partners, reporting and delivery milestones.
+      with a £2.5 million Department for Education-funded budget.
     impact: high
     tags: [budget, partnership, workforce, programme-delivery]
 
@@ -39,23 +37,33 @@ achievements:
       logs, Terms of Reference and project plans with clear objectives,
       milestones and success measures.
     impact: high
-    tags: [governance, assurance, risk]
+    tags: [governance, assurance, risk, dependency-management]
 
-  - title: Leading Barnardo's benefits management framework
+  - title: Leading the implementation of Barnardo's benefits management framework
     description: >-
-      Implementing a consistent approach to benefits realisation and
-      management, aligning programme outcomes with organisational strategy,
-      future operating models and business architecture.
+      Aligning programme outcomes with organisational strategy, future operating
+      models and business architecture.
     impact: high
     tags: [benefits, benefits-realisation, strategy]
 
   - title: Engaging and influencing stakeholders at all levels
     description: >-
       Working with the Executive Leadership Team, front-line colleagues and
-      support service functions throughout scope, implementation and delivery to
-      ensure successful adoption of organisational change, including structured
-      change management activity, change impact assessments, equality impact
-      assessments, communications planning, readiness activities and training
-      coordination.
+      support service functions throughout scope, implementation and delivery, to
+      ensure successful adoption of organisational change.
     impact: high
-    tags: [stakeholder, change, edi, influence]
+    tags: [stakeholder, change, influence]
+
+  - title: Leading structured change management activity
+    description: >-
+      Including change impact assessments, equality impact assessments,
+      communications planning, readiness activities and training coordination.
+    impact: high
+    tags: [change, edi, communications]
+
+  - title: Facilitating business analysis and user research workshops
+    description: >-
+      Informing the design and delivery of services, systems, processes and
+      organisational structures that meet customer and business needs.
+    impact: medium
+    tags: [business-analysis, user-research, design]
