@@ -36,7 +36,7 @@ Output: `output/cv-natalie-rebecchi.pdf` and `output/site/`.
 
 ```
 data/                YAML source of truth
-  profile.yml        name, contact, profile, selected outcomes
+  profile.yml        name, contact, profile, current portfolio
   experience/*.yml   one file per role, with achievements
   skills.yml         areas of expertise + skill groups
   certifications.yml APM PMQ
