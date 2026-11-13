@@ -130,7 +130,7 @@
     #linebreak()
     #text(size: 9.5pt, fill: meta)[#cert.issuer, #cert.grade]
     #h(0.8em)
-    #text(size: 8.5pt)[#link("https://thebillington.co.uk/nat-cv/assets/certificate.pdf")[View certificate]]
+    #text(size: 8.5pt)[#link("https://natalie.rebecchi.uk/assets/certificate.pdf")[View certificate]]
     #v(4pt)
   ]
 
