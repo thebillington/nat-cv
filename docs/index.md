@@ -1,7 +1,7 @@
 # {{ data.profile.name }}
 
 <p class="hero-role">{{ data.profile.title }}</p>
-<p class="hero-contact">{{ data.profile.location }}<br /><a href="mailto:{{ data.profile.email }}">{{ data.profile.email }}</a></p>
+<p class="hero-contact">{{ data.profile.location }}<br /><a href="mailto:{{ data.profile.email }}">{{ data.profile.email }}</a><br /><a href="{{ data.profile.links.linkedin }}">LinkedIn</a></p>
 
 <p class="button-row">
   <a class="md-button md-button--primary" href="{{ data.profile.name.replace(' ', '-') }}-CV.pdf">Download CV (PDF)</a>
