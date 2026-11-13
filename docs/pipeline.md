@@ -53,13 +53,13 @@ three pages or a missing email is worse than no build.
 Reviews are independent and adversarial. Each writes a memo to `docs/reviews/`,
 and fixes are applied to `data/` or `templates/` before a rebuild.
 
-1. **Voice and fidelity** — a line-by-line comparison with the source CV,
+1. **Voice and fidelity**, a line-by-line comparison with the source CV,
    checking that the trimmed text still sounds like Natalie and that no claim
    has been overstated.
-2. **Market and seniority** — a hiring-panel read against the keyword and
+2. **Market and seniority**, a hiring-panel read against the keyword and
    salary research: does it read senior, is the scope visible, what would be
    asked at interview?
-3. **Design and accessibility** — typography, layout, print, ATS extraction,
+3. **Design and accessibility**, typography, layout, print, ATS extraction,
    tagged-PDF structure and website quality.
 
 Reviewers are given the source document as well as the output, so they can catch

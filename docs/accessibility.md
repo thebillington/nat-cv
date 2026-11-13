@@ -8,4 +8,4 @@ This site is the accessible version of Natalie's CV.
 - The site can be zoomed and reflowed, and it prints to a plain, readable page.
 - The PDF is a tagged PDF (PDF/UA-1), with real headings and reading order, so it works with screen readers.
 
-If you need this CV in another format — large print, plain text, or Word — email [natalie.donna.edwards@gmail.com](mailto:natalie.donna.edwards@gmail.com).
+If you need this CV in another format, large print, plain text, or Word, email [natalie.donna.edwards@gmail.com](mailto:natalie.donna.edwards@gmail.com).

@@ -5,7 +5,7 @@
 
 ### {{ role.title }}
 
-<p class="role-meta">{{ role.start }} to {{ role.end }} · {{ role.sector }}</p>
+<p class="role-meta">{{ role.start }} to {{ role.end }} ({{ role.sector }})</p>
 
 <p class="role-summary">{{ role.summary }}</p>
 

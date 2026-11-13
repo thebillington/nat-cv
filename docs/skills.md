@@ -3,6 +3,6 @@
 {% for cat in data.skills.categories %}
 ## {{ cat.name }}
 
-{{ cat.skills | join(" · ") }}
+{{ cat.skills | join(", ") }}
 
 {% endfor %}

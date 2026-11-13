@@ -19,15 +19,14 @@ achievements:
   - title: Introducing a single operating model across the estate
     description: >-
       Delivering process improvements and new systems alongside a target
-      operating model for a directorate looking after circa 900 properties.
+      operating model for a directorate looking after around 900 properties.
     impact: high
     tags: [target-operating-model, transformation, property, delivery]
 
   - title: Providing programme governance
     description: >-
       Mobilising and managing Steering Groups, responsibility matrices, RAID
-      logs, Terms of Reference and project plans with clear objectives,
-      milestones and success measures.
+      logs, Terms of Reference and project plans with clear objectives.
     impact: high
     tags: [governance, assurance, risk, dependency-management]
 
@@ -41,8 +40,8 @@ achievements:
   - title: Engaging and influencing stakeholders at all levels
     description: >-
       Working with the Executive Leadership Team, front-line colleagues and
-      support service functions throughout scope, implementation and delivery, to
-      ensure successful adoption of organisational change.
+      support service functions to ensure successful adoption of organisational
+      change.
     impact: high
     tags: [stakeholder, change, influence]
 

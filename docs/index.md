@@ -1,11 +1,17 @@
 # {{ data.profile.name }}
 
 <p class="hero-role">{{ data.profile.title }}</p>
-<p class="hero-contact">{{ data.profile.location }} · <a href="mailto:{{ data.profile.email }}">{{ data.profile.email }}</a></p>
+<p class="hero-contact">{{ data.profile.location }}<br /><a href="mailto:{{ data.profile.email }}">{{ data.profile.email }}</a></p>
+
+<div class="stats">
+  <div><strong>15+</strong><span>years in the third sector</span></div>
+  <div><strong>£2.5m</strong><span>DfE-funded programme</span></div>
+  <div><strong>900</strong><span>properties in the directorate</span></div>
+</div>
 
 <p class="button-row">
   <a class="md-button md-button--primary" href="cv-{{ data.profile.name.lower().replace(' ', '-') }}.pdf">Download CV (PDF)</a>
-  <a class="md-button" href="experience.md">View experience</a>
+  <a class="md-button" href="experience/">View experience</a>
 </p>
 
 ## Profile
@@ -16,7 +22,7 @@
 
 <ul class="outcomes">
 {% for item in data.profile.portfolio %}
-  <li><strong>{{ item.label }}</strong> — {{ item.text }}</li>
+  <li><strong>{{ item.label }}</strong>: {{ item.text }}</li>
 {% endfor %}
 </ul>
 
@@ -32,7 +38,7 @@
 
 ### {{ data.experience[0].title }}, {{ data.experience[0].company }}
 
-<p class="role-meta">{{ data.experience[0].start }} to {{ data.experience[0].end }} · {{ data.experience[0].sector }}</p>
+<p class="role-meta">{{ data.experience[0].start }} to {{ data.experience[0].end }} ({{ data.experience[0].sector }})</p>
 
 {{ data.experience[0].summary }}
 
@@ -42,4 +48,4 @@
 {% endfor %}
 </ul>
 
-<a class="md-button" href="experience.md">Full experience</a>
+<a class="md-button" href="experience/">Full experience</a>

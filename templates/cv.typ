@@ -1,4 +1,4 @@
-// Natalie Rebecchi — CV
+// Natalie Rebecchi CV
 // Single-column, ATS-safe, tagged PDF (PDF/UA-1).
 // Design rationale: docs/design/design-decisions.md
 
@@ -14,7 +14,7 @@
 
 #let cv(data) = {
   set document(
-    title: data.profile.name + " — " + data.profile.title + " CV",
+    title: data.profile.name + " CV",
     author: data.profile.name,
     keywords: (
       "programme management",
@@ -35,7 +35,7 @@
       set text(font: sans, size: 8.5pt, fill: slate)
       pdf.artifact[
         #align(right)[
-          #data.profile.name #h(0.35em) · #h(0.35em) Page #counter(page).get().first() of #total
+          #data.profile.name #h(1.2em) Page #counter(page).get().first() of #total
         ]
       ]
     },
@@ -68,10 +68,10 @@
     #linebreak()
     #text(size: 9.5pt, fill: slate)[
       #data.profile.location
-      #h(0.6em) · #h(0.6em) #link("tel:" + data.profile.phone.replace(" ", ""))[#data.profile.phone]
-      #h(0.6em) · #h(0.6em) #link("mailto:" + data.profile.email)[#data.profile.email]
+      #h(1.4em) #link("tel:" + data.profile.phone.replace(" ", ""))[#data.profile.phone]
+      #h(1.4em) #link("mailto:" + data.profile.email)[#data.profile.email]
       #if data.profile.links.linkedin != none and data.profile.links.linkedin != "" [
-        #h(0.6em) · #h(0.6em) #link(data.profile.links.linkedin)[LinkedIn]
+        #h(1.4em) #link(data.profile.links.linkedin)[LinkedIn]
       ]
     ]
   ]
@@ -92,10 +92,10 @@
 
   for role in data.experience {
     block(above: 0pt, below: 0pt, breakable: false)[
-      #v(9pt)
+      #v(6pt)
       #text(size: 11pt, weight: 600)[#role.title]#text(size: 11pt)[, #role.company]
       #h(1fr)
-      #text(size: 9.5pt, fill: slate)[#role.start -- #role.end]
+      #text(size: 9.5pt, fill: slate)[#role.start to #role.end]
       #linebreak()
       #text(size: 9pt, fill: meta)[#role.sector]
       #if role.at("summary", default: "") != "" [
@@ -126,12 +126,12 @@
   for cert in data.certifications.certifications [
     #text(size: 10.5pt, weight: 600)[#cert.name]#h(1fr)#text(size: 9.5pt, fill: slate)[#cert.awarded]
     #linebreak()
-    #text(size: 9.5pt, fill: meta)[#cert.issuer · #cert.grade]
+    #text(size: 9.5pt, fill: meta)[#cert.issuer, #cert.grade]
     #v(3pt)
   ]
 
   for edu in data.education.education [
-    #text(size: 10.5pt)[#edu.degree]#text(size: 10.5pt, fill: slate)[, #edu.institution]#if edu.at("grade", default: none) != none [#text(size: 9.5pt, fill: meta)[ (#edu.grade)]]#h(1fr)#text(size: 9.5pt, fill: slate)[#edu.start -- #edu.end]
+    #text(size: 10.5pt)[#edu.degree]#text(size: 10.5pt, fill: slate)[, #edu.institution]#if edu.at("grade", default: none) != none [#text(size: 9.5pt, fill: meta)[ (#edu.grade)]]#h(1fr)#text(size: 9.5pt, fill: slate)[#edu.start to #edu.end]
     #linebreak()
   ]
 

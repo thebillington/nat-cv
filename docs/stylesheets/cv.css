@@ -51,14 +51,16 @@ body,
   color: var(--cv-ink);
 }
 
+
 .md-typeset {
-  font-size: 1.05rem;
+  font-size: 0.85rem;
   line-height: 1.65;
+  max-width: 68ch;
 }
 
 .md-typeset p,
 .md-typeset li {
-  max-width: 68ch;
+  max-width: none;
 }
 
 .md-typeset h1,
@@ -71,19 +73,38 @@ body,
 }
 
 .md-typeset h1 {
-  font-size: 2.15rem;
-  margin-bottom: 0.2rem;
+  font-size: 2rem;
+  margin-bottom: 0.35rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 3px solid var(--cv-teal);
+  display: inline-block;
 }
 
 .md-typeset h2 {
-  font-size: 1.35rem;
+  position: relative;
+  padding-left: 0.7rem;
+}
+
+.md-typeset h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.18em;
+  bottom: 0.18em;
+  width: 3px;
+  background: var(--cv-teal);
+}
+
+.md-typeset h2 {
+  font-size: 1.2rem;
   border-bottom: 1px solid var(--cv-rule);
   padding-bottom: 0.35rem;
+  padding-left: 0.7rem;
   margin-top: 2.2rem;
 }
 
 .md-typeset h3 {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   margin-bottom: 0.15rem;
 }
 
@@ -145,12 +166,49 @@ body,
 /* Section lists that mirror the PDF */
 .md-typeset .outcomes {
   list-style: none;
-  padding-left: 0;
+  padding: 1rem 1.2rem;
+  margin-left: 0;
+  background: #f5f1e8;
+  border: 1px solid #e6e0d4;
+  border-left: 3px solid var(--cv-teal);
+}
+
+.md-typeset .stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.9rem;
+  margin: 1.6rem 0 0.4rem;
+  max-width: 68ch;
+}
+
+.md-typeset .stats div {
+  border-top: 2px solid var(--cv-teal);
+  padding-top: 0.5rem;
+}
+
+.md-typeset .stats strong {
+  display: block;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.6rem;
+  color: var(--cv-navy);
+  line-height: 1.1;
+}
+
+.md-typeset .stats span {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--cv-slate);
+  line-height: 1.35;
+  margin-top: 0.2rem;
+}
+
+@media screen and (max-width: 44.984375em) {
+  .md-typeset .stats {
+    grid-template-columns: 1fr;
+  }
 }
 
 .md-typeset .outcomes li {
-  border-left: 2px solid var(--cv-teal);
-  padding-left: 0.85rem;
   margin-bottom: 0.75rem;
 }
 
@@ -209,9 +267,16 @@ body,
   outline-offset: 2px;
 }
 
+.md-header a:focus-visible,
+.md-header button:focus-visible,
+.md-footer a:focus-visible,
+.md-footer-meta a:focus-visible {
+  outline-color: #fbf9f5;
+}
+
 @media screen and (max-width: 44.984375em) {
   .md-typeset h1 {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 }
 

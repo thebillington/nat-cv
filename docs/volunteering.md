@@ -3,7 +3,7 @@
 {% for item in data.volunteering.volunteering %}
 ## {{ item.role }}, {{ item.organisation }}
 
-<p class="role-meta">{% if item.year %}{{ item.year }}{% endif %}{% if item.location %}{% if item.year %} · {% endif %}{{ item.location }}{% endif %}</p>
+<p class="role-meta">{% if item.year %}{{ item.year }}{% endif %}{% if item.location %}{% if item.year %} ({% endif %}{{ item.location }}{% if item.year %}){% endif %}{% endif %}</p>
 
 {{ item.description }}
 
