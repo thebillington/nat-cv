@@ -26,14 +26,14 @@
 
   set page(
     paper: "a4",
-    margin: (x: 20mm, top: 12mm, bottom: 11mm),
+    margin: (x: 20mm, top: 14mm, bottom: 13mm),
     fill: white,
     footer: context {
       let total = counter(page).final().first()
       set text(font: sans, size: 8.5pt, fill: slate)
       pdf.artifact[
         #align(right)[
-          #data.profile.name #h(1.2em) Page #counter(page).get().first() of #total
+          Page #counter(page).get().first() of #total
         ]
       ]
     },
@@ -52,60 +52,61 @@
     #text(font: serif, size: 26pt, weight: 600, fill: navy)[#it.body]
   ]
 
-  show heading.where(level: 2): it => {
-    context if counter(page).get().first() > 1 { v(8pt) }
-    v(12pt)
-    text(font: serif, size: 13pt, weight: 600, fill: navy)[#it.body]
-    v(3pt)
-    pdf.artifact(line(length: 100%, stroke: 0.7pt + teal))
-    v(5pt)
-  }
+  show heading.where(level: 2): it => block(
+    above: 30pt,
+    below: 10pt,
+    width: 100%,
+    sticky: true,
+    stroke: (bottom: 0.7pt + teal),
+    inset: (bottom: 4pt),
+  )[#text(font: serif, size: 13pt, weight: 600, fill: navy)[#it.body]]
 
   // Header
   heading(level: 1)[#data.profile.name]
 
-  text(size: 11pt, weight: 600, fill: teal)[#data.profile.title]
-  linebreak()
-  text(size: 9.5pt, fill: slate)[
-    #data.profile.location
-    #h(1.4em) #link("tel:" + data.profile.phone.replace(" ", ""))[#data.profile.phone]
-    #h(1.4em) #link("mailto:" + data.profile.email)[#data.profile.email]
-    #if data.profile.links.linkedin != none and data.profile.links.linkedin != "" [
-      #h(1.4em) #link(data.profile.links.linkedin)[LinkedIn]
-    ]
-  ]
-
-  v(8pt)
-  pdf.artifact(line(length: 100%, stroke: 1pt + teal))
+  stack(spacing: 0pt,
+    v(2pt),
+    text(size: 11pt, weight: 600, fill: teal)[#data.profile.title],
+    v(10pt),
+    text(size: 9.5pt, fill: slate)[
+      #data.profile.location
+      #h(1.4em) #link("tel:" + data.profile.phone.replace(" ", ""))[#data.profile.phone]
+      #h(1.4em) #link("mailto:" + data.profile.email)[#data.profile.email]
+      #if data.profile.links.linkedin != none and data.profile.links.linkedin != "" [
+        #h(1.4em) #link(data.profile.links.linkedin)[LinkedIn]
+      ]
+    ],
+    v(12pt),
+    block(width: 100%, height: 1pt, fill: teal),
+  )
 
   // Profile
   heading(level: 2)[Profile]
-  text(size: 10pt)[#data.profile.summary]
+  text(size: 9.5pt)[#data.profile.summary]
 
   // Expertise
   heading(level: 2)[Areas of expertise]
   for (i, line) in data.skills.expertise.enumerate() {
     if i > 0 { linebreak() }
-    text(size: 9.2pt, fill: slate)[#line]
+    text(size: 9.5pt, fill: slate)[#line]
   }
 
   // Experience
   heading(level: 2)[Experience]
 
   for role in data.experience {
-    block(above: 22pt, below: 0pt, breakable: false)[
+    block(above: 20.5pt, below: 0pt, breakable: false)[
       #text(size: 11.5pt, weight: 600, fill: navy)[#role.company]
       #h(1fr)
       #text(size: 9.5pt, fill: slate)[#role.start to #role.end]
       #linebreak()
-      #text(size: 10.5pt)[#role.title]
-      #text(size: 9.5pt, fill: meta)[, #role.sector]
+      #text(size: 10.5pt)[#role.title#text(size: 9.5pt, fill: meta)[, #role.sector]]
       #if role.at("summary", default: "") != "" [
         #v(5pt)
         #text(size: 9.5pt)[#role.summary]
       ]
       #if role.at("achievements", default: ()).len() > 0 [
-        #v(3pt)
+        #v(5.5pt)
         #list(
           spacing: 0.36em,
           ..role.achievements.filter(a => a.at("include_pdf", default: true)).map(a => text(size: 9.5pt)[*#a.title.* #a.description]),
@@ -118,8 +119,9 @@
   heading(level: 2)[Board and voluntary roles]
 
   for item in data.volunteering.volunteering.filter(i => i.at("include_pdf", default: true)) [
-    #text(size: 10pt)[*#item.role*]#text(size: 10pt, fill: slate)[, #item.organisation]#if item.at("year", default: none) != none [#text(size: 9.5pt, fill: meta)[ (#item.year)]]#if item.at("location", default: none) != none [#text(size: 9.5pt, fill: meta)[, #item.location]]#text(size: 10pt)[: #item.description]
+    #text(size: 9.5pt)[*#item.role*#text(size: 9.5pt, fill: slate)[, #item.organisation]#if item.at("year", default: none) != none [#text(size: 9.5pt, fill: meta)[ (#item.year)]]#if item.at("location", default: none) != none [#text(size: 9.5pt, fill: meta)[, #item.location]]#text(size: 9.5pt)[: #item.description]]
     #parbreak()
+    #v(3pt)
   ]
 
   // Qualifications
@@ -135,7 +137,7 @@
   ]
 
   for edu in data.education.education.filter(e => e.at("include_pdf", default: true)) [
-    #text(size: 10.5pt)[#edu.degree]#text(size: 10.5pt, fill: slate)[, #edu.institution]#if edu.at("grade", default: none) != none [#text(size: 9.5pt, fill: meta)[ (#edu.grade)]]#h(1fr)#text(size: 9.5pt, fill: slate)[#edu.start to #edu.end]
+    #text(size: 10pt)[#edu.degree#text(size: 10pt, fill: slate)[, #edu.institution]#if edu.at("grade", default: none) != none [#text(size: 9.5pt, fill: meta)[ (#edu.grade)]]]#h(1fr)#text(size: 9.5pt, fill: slate)[#edu.start to #edu.end]
     #linebreak()
   ]
 }

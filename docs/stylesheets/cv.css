@@ -140,6 +140,9 @@ body,
 }
 
 .md-typeset .button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
   margin: 1.4rem 0 0.4rem;
 }
 
@@ -242,6 +245,20 @@ body,
 @media screen and (max-width: 44.984375em) {
   .md-typeset h1 {
     font-size: 1.4rem;
+  }
+
+  .md-typeset .button-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    margin: 1.2rem 0 1.6rem;
+  }
+
+  .md-typeset .button-row .md-button {
+    width: 100%;
+    max-width: 20rem;
+    margin: 0;
+    text-align: center;
   }
 }
 

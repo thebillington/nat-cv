@@ -2,7 +2,6 @@ site_name: Natalie Rebecchi CV
 site_description: "Programme and Project Manager with over fifteen years' experience in the third sector. Programme governance, benefits management and organisational change."
 site_url: https://natalie.rebecchi.uk/
 edit_uri: ""
-copyright: Natalie Rebecchi
 
 theme:
   name: material
@@ -38,10 +37,6 @@ nav:
 
 extra:
   generator: false
-  social:
-    - icon: fontawesome/solid/envelope
-      name: Email Natalie
-      link: mailto:natalie.donna.edwards@gmail.com
   person:
     name: Natalie Rebecchi
     email: natalie.donna.edwards@gmail.com
