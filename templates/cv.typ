@@ -82,7 +82,11 @@
 
   // Profile
   heading(level: 2)[Profile]
-  text(size: 9.5pt)[#data.profile.summary]
+  let paras = data.profile.summary.trim().split("\n\n")
+  for (i, para) in paras.enumerate() {
+    if i > 0 { parbreak() }
+    text(size: 9.5pt)[#para.replace("\n", " ")]
+  }
 
   // Expertise
   heading(level: 2)[Areas of expertise]
